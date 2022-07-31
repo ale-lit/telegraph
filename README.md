@@ -1,1 +1,1 @@
-# telegraph
+# Учебный проект "Telegraph" (Skillbox)
