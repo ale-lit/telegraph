@@ -2,7 +2,8 @@
 
 $textStorage = [];
 
-function add(string $title, string $text, array &$textStorage): void {
+function add(string $title, string $text, array &$textStorage): void 
+{
     $textStorage[] = [
         'title' => $title,
         'text' => $text,
@@ -14,7 +15,8 @@ add('Заголовок 2', 'Текст 2', $textStorage);
 
 print_r($textStorage);
 
-function remove(int $postId, array &$textStorage): bool {
+function remove(int $postId, array &$textStorage): bool 
+{
     if (isset($textStorage[$postId])) {
         unset($textStorage[$postId]);
         return true;
@@ -27,7 +29,8 @@ var_dump(remove(5, $textStorage));
 
 print_r($textStorage);
 
-function edit(int $postId, string $title, string $text, array &$textStorage): bool {
+function edit(int $postId, string $title, string $text, array &$textStorage): bool 
+{
     if (isset($textStorage[$postId])) {
         $textStorage[$postId]['title'] = $title;
         $textStorage[$postId]['text'] = $text;
